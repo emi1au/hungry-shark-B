@@ -408,11 +408,11 @@ export const MenuGrid: React.FC<MenuGridProps> = ({
   }, [items, groupByCategory, viewMode]);
 
   if (activeMasterTab === 'TV1' && viewMode === 'compact') {
-    const col1Names = ['Chips', 'Cheese & Chips', 'empty', 'Chips & Curry'];
-    const col2Names = ['empty', 'Cheese, Chips & Beans', 'empty', 'Cheese, Chips & Curry'];
-    const col3Names = ['Sausage', 'Battered Sausage', 'Chip Butty', 'empty'];
-    const col4Names = ['Minced Beef & Onion Pie', 'Chicken & Mushroom Pie', 'Steak & Kidney Pie', 'Chips & Gravy'];
-    const col5Names = ['Cod', 'Cod Bites', 'Fish Cake', 'Cheese, Chips & Gravy'];
+    const col1Names = ['Cod', 'Cod Bites', 'Fish Cake', 'Minced Beef & Onion Pie'];
+    const col2Names = ['Chips', 'Cheese & Chips', 'Cheese, Chips & Beans', 'Chicken & Mushroom Pie'];
+    const col3Names = ['empty', 'empty', 'empty', 'Steak & Kidney Pie'];
+    const col4Names = ['Chip Butty', 'Chips & Gravy', 'Cheese, Chips & Gravy', 'Sausage'];
+    const col5Names = ['empty', 'Chips & Curry', 'Cheese, Chips & Curry', 'Battered Sausage'];
 
     const getItems = (names: string[]) => names.map(name => name === 'empty' ? null : items.find(i => i.name === name));
 
@@ -450,11 +450,11 @@ export const MenuGrid: React.FC<MenuGridProps> = ({
   }
 
   if (activeMasterTab === 'TV2' && viewMode === 'compact') {
-    const col1Names = ['Doner Meat', 'Chicken Kebab', 'Mix Kebab', 'Kebab Burger'];
+    const col1Names = ['Doner Meat', 'Chicken Kebab', 'Mix Kebab' ];
     const col2Names = ['Doner Meat Wrap', 'Chicken Kebab Wrap', 'Mix Kebab Wrap', 'empty'];
-    const col3Names = ['Chicken Strips Wrap', 'Veggie Wrap'];
-    const col4Names = ['Chicken Burger', 'Veggie Burger'];
-    const col5Names = ['Beef Burger', 'Cheese Burger'];
+    const col3Names = ['empty', 'Chicken Strips Wrap', 'Veggie Wrap'];
+    const col4Names = ['empty', 'Chicken Burger', 'Veggie Burger'];
+    const col5Names = ['Beef Burger', 'Cheese Burger', 'Kebab Burger'];
 
     const getItems = (names: string[]) => names.map(name => name === 'empty' ? null : items.find(i => i.name === name));
 
@@ -492,11 +492,11 @@ export const MenuGrid: React.FC<MenuGridProps> = ({
   }
 
   if (activeMasterTab === 'TV3' && viewMode === 'compact') {
-    const col1Names = ["Fish Cake Kids", "Cod Bites Kids", "Sausage Kids"];
-    const col2Names = ["Nuggets Kids", "Strips Kids"];
-    const col3Names = ["Chicken Breast", "Chicken Curry", "Drinks", "Sauce Pot"];
-    const col4Names = ["Breaded Cheese Sticks (6)", "Jalapeno Cream Cheese (6)", "Bread Roll", "Green Salad"];
-    const col5Names = ["Chicken Strips (5 pcs)", "Chicken Nuggets (6 pcs)", "Spicy Wings (6 pcs)", "Dips"];
+    const col1Names = ["Fish Cake Kids", "Drinks", "Chicken Strips (5 pcs)", "Chicken Breast"];
+    const col2Names = ["Cod Bites Kids", "Sauce Pot", "Chicken Nuggets (6 pcs)", "Chicken Curry"];
+    const col3Names = ["Sausage Kids", "Dips", "Spicy Wings (6 pcs)"];
+    const col4Names = ["Nuggets Kids", "Green Salad", "Breaded Cheese Sticks (6)"];
+    const col5Names = ["Strips Kids", "Bread Roll", "Jalapeno Cream Cheese (6)"];
 
     const getItems = (names: string[]) => names.map(name => items.find(i => i.name === name)).filter(Boolean) as MenuItem[];
 
