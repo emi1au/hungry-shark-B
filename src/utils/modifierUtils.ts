@@ -209,9 +209,9 @@ export const getModifierPriority = (groupId?: string) => {
     case 'type': return 20;
     case 'upgrade': return 30;
     case 'add_chips': return 40;
-    case 'drink': return 50;
     case 'salad': return 60;
     case 'sauce_basic': return 70;
+    case 'drink': return 75;
     case 'condiments': return 80;
     case 'sauce_toppings': return 90;
     case 'addons': return 100;
